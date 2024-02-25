@@ -14,3 +14,10 @@ class DataValidationConfig:
     root_dir:Path
     STATUS_FILE:str
     ALL_REQUIRED_FILES:list
+
+
+@dataclass(frozen=True)  #this is not python class but dataclass, here you can define the veriables without using self keyword.
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
+    tokenizer_name: Path
